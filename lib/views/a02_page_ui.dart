@@ -1,6 +1,7 @@
 // ignore_for_file: sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/views/a01_page_ui.dart';
 
 class A02PageUi extends StatefulWidget {
   const A02PageUi({super.key});
@@ -75,23 +76,32 @@ class _A02PageUiState extends State<A02PageUi> {
               ),
             ),
             SizedBox(height: 10.0,),
-            Align(
-                  alignment: Alignment.centerRight,
-                  child: TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'Forget Password ?',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 15.00,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal:25.0),
+              child: Align(
+                    alignment: Alignment.centerRight,
+                    child: TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        'Forget Password ?',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 15.00,
+                        ),
                       ),
                     ),
                   ),
-                ),
+            ),
             SizedBox(height: 20.0,),
             Center(
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context, MaterialPageRoute(
+                      builder: (context) => const A01PageUi()
+                    ),
+                  );
+                },
                 child: Text(
                   'Sign In',
                   style: TextStyle(fontSize: 20, color: Colors.white),

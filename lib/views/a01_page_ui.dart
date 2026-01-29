@@ -21,7 +21,7 @@ class _A01PageUiState extends State<A01PageUi> {
             Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
             child: Container(
-              child: Image.asset('assets/images/imgg2 1.png',
+              child: Image.asset('assets/images/A21.png',
               width: 434,
               height: 434,),
               width: double.infinity,
