@@ -60,7 +60,7 @@ class _A01PageUiState extends State<A01PageUi> {
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam maecenas mi non sed ut odio. Non, justo, sed facilisi et. Eget viverra urna, vestibulum egestas faucibus egestas. Sagittis nam velit volutpat eu nunc.',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 12,
+                fontSize: 13,
                 color: Color(0xff000000),
                 ),
               ),
@@ -110,6 +110,7 @@ class _A01PageUiState extends State<A01PageUi> {
                       ),
                     ),
                   ),
+                  
                 ],
               ),
             ),
