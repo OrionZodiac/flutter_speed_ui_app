@@ -1,7 +1,7 @@
 // ignore_for_file: sort_child_properties_last
 
 import 'package:flutter/material.dart';
-import 'package:flutter_speed_ui_app/views/a01_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/A/a01_page_ui.dart';
 
 class A02PageUi extends StatefulWidget {
   const A02PageUi({super.key});
