@@ -20,8 +20,21 @@ class _C03PageUiState extends State<C03PageUi> {
           SizedBox(
             height: 80.0,
           ),
+          Padding(
+            padding: const EdgeInsets.only(right: 80.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Image.asset(
+                  'assets/images/Group 59.png',
+                  width: 24,
+                  height: 24,
+                ),
+              ],
+            ),
+          ),
           SizedBox(
-            height: 10.0,
+            height: 50.0,
           ),
           Text(
             'Create your account',

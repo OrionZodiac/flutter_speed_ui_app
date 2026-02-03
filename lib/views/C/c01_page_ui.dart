@@ -27,11 +27,57 @@ class _C01PageUiState extends State<C01PageUi> {
   }
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text(
-          "C01 Page UI",
-          style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+    return  Container(
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage('assets/images/Smiley.png'),
+          fit: BoxFit.cover,
+        ),
+      ),
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        body: Center(
+          child: Column(
+            children: [
+              SizedBox(height: 300),
+              Image.asset('assets/images/Vector.png',
+              width: 100,
+              height: 100,),
+              SizedBox(height: 20),
+              Text('Hope for',
+              style: TextStyle(
+                fontSize: 36,
+                color: Colors.white,
+              ),),
+              SizedBox(height: 10),
+              Text('Humanity',
+              style: TextStyle(
+                fontSize: 36,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),),
+              SizedBox(height: 100),
+              Text(
+                'Welcome to ',
+                style: TextStyle(
+                  fontSize: 30,
+                  color: Color(0xFF005014),
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+              SizedBox(height: 10),
+              Text(
+                'hope for humanity',
+                style: TextStyle(
+                  fontSize: 30,
+                  color: Color(0xFF005014),
+                  fontWeight: FontWeight.bold
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
